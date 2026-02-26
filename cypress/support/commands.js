@@ -23,3 +23,10 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('login',(email, password) => {
+cy.visit('https://naveenautomationlabs.com/opencart/index.php?route=account/login')
+cy.get('#input-email').type('neyazshahab9905@gmail.com')
+cy.get('#input-password').type('Cypress123!!')
+cy.get('input.btn.btn-primary').click()
+})
