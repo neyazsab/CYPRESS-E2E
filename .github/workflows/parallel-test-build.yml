@@ -13,7 +13,6 @@ jobs:
         with:
         command: npm run test:addToCart
 
-
   Test-run:
     runs-on: ubuntu-24.04
     steps:
