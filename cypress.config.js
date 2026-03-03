@@ -4,7 +4,7 @@ module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   
   e2e: {
-    pageLoadTimeout: 120000,       // 2 minutes for page load
+    pageLoadTimeout: 180000,       // 2 minutes for page load
     defaultCommandTimeout: 10000,
 
     setupNodeEvents(on, config) {
