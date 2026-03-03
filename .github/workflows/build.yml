@@ -12,7 +12,7 @@ jobs:
         uses: cypress-io/github-action@v7
 
       - name: Cypress Test Report
-      - uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v4
         with:
           name: Mochawesome HTML report
           path: cypress/reports/html # or path/to/artifact 
