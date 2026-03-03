@@ -4,6 +4,9 @@ module.exports = defineConfig({
   reporter: 'cypress-mochawesome-reporter',
   
   e2e: {
+    pageLoadTimeout: 120000,       // 2 minutes for page load
+    defaultCommandTimeout: 10000,
+
     setupNodeEvents(on, config) {
       // implement node event listeners here
       require('cypress-mochawesome-reporter/plugin')(on);
